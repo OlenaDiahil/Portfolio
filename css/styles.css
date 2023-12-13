@@ -4,6 +4,16 @@ body {
     padding: 0;
 }
 
+:root {
+    --body-text: #336699;
+    --basic-background: #fff;
+    --background-color: #336699;
+    --white-text: #FFFFFF;
+    --focus-color: #404BBF;
+    --duration: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
     padding: 0 20px;
     max-width: 320px;
@@ -27,14 +37,15 @@ body {
 
 header {
     text-align: center;
-    background-color: #336699;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--white-text);
     padding: 80px 0;
 }
 
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    
 }
 
 header p {
@@ -42,15 +53,15 @@ header p {
 }
 
 section {
-    background-color: #ffffff;
+    background-color: var(--basic-background);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 30px 0;
     padding: 40px 0;
 }
 
 h2 {
-    color: #336699;
-    border-bottom: 2px solid #336699;
+    color: var(--body-text);
+    border-bottom: 2px solid var(--body-text);
     padding-bottom: 10px;
     margin-bottom: 30px;
     font-size: 1.8em;
@@ -68,6 +79,7 @@ li {
 
 .img-project {
     width: 100%;
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,12 +113,17 @@ li {
 
 .project-link {
     cursor: pointer;
+    border: 2px solid var(--body-text);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 4px 50px;
+    
 }
 
 footer {
     text-align: center;
     background-color: #333;
-    color: #fff;
+    color: var(--white-text);
     padding: 20px 0;
     bottom: 0;
     width: 100%;
