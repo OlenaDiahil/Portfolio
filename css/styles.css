@@ -40,7 +40,7 @@ header {
     padding: 120px 0;
     background-color: var(--background-color);
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(51, 102, 153, 0.7)),
-        url('/img/phon.png');
+        url('../img/phon.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
